@@ -1,0 +1,173 @@
+
+<form action="/login" method="post">
+  <fieldset>
+
+    <h1>Log In</h1>
+
+    <input type="email" name="email" id="email" placeholder="email" />
+    <input type="text" name="firstname" id="firstname" maxlength="12" placeholder="first name" />
+    <input type="text" name="lastname" id="lastname" maxlength="12" placeholder="last name" />
+   <input type="tel" name="phone" placeholder="(212) 555-1212" />
+
+
+
+  </fieldset>
+</form>
+
+
+
+<form action="" method="post"> <!-- wrong, should have been: <form action="" method="get"> -->
+  <fieldset>
+
+    <h2>Phone Type</h2>
+    <ul>
+      <li>
+        <label>
+          <input type="radio" name="phone_type" value="home" checked/>
+          Home
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="radio" name="phone_type" value="business" />
+          Business
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="radio" name="phone_type" value="mobile" />
+          Mobile
+        </label>
+      </li>
+    </ul>
+  </fieldset>
+
+  <fieldset>
+    <h2>Categories</h2>
+    
+    <ul>
+      <li>
+        <label>
+          <input type="radio" name="category" value="core" checked/>
+          Core
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="radio" name="category" value="plugins" />
+          Plugins
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="radio" name="category" value="libraries" />
+          Libraries
+        </label>
+      </li>
+          <li>
+        <label>
+          <input type="radio" name="category" value="conventions" />
+          Conventions
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="radio" name="category" value="reviews" />
+          Reviews
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="radio" name="category" value="opinion" />
+          Opinion
+        </label>
+      </li>
+        </li>
+      <li>
+        <label>
+          <input type="radio" name="category" value="people" />
+          People
+        </label>
+      </li>
+    </ul>
+  </fieldset>
+
+  <fieldset>
+    <h2>Tags</h2>
+    <ul>
+      <li>
+        <label>
+          <input type="checkbox" name="html" />
+          HTML
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="css" />
+          CSS
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="javascript" />
+          Javascript
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="ruby" />
+          Ruby
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="rails" />
+          Rails
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="python" />
+          Python
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="django" />
+          Django
+        </label>
+      </li>
+    </ul>
+</fieldset>
+
+</form>
+
+<select multiple name="Form Filtering" placeholder="select one">
+  <optgroup label="Categories">
+    <option>Core</option>
+    <option>Plugins</option>
+    <option>Libraries</option>
+    <option>Conventions</option>
+    <option>Reviews</option>
+    <option>Opinion</option>
+    <option>People</option>
+  </optgroup>
+  <optgroup label="Tags">
+    <option>HTML</option>
+    <option>CSS</option>
+    <option>Javascript</option>
+    <option>Ruby</option>
+    <option>Rails</option>
+    <option>Python</option>
+    <option>Django</option>
+  </optgroup>
+
+</select>
+
+      <div class="actions">
+    
+      <button type="submit" formaction="/account/delete">reset</button>
+  <!-- Wrong, should have been: <input type="reset" /> -->
+
+    </div>
+

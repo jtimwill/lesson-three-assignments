@@ -1,0 +1,21 @@
+form#hit_form {
+  float: left;
+  margin-right: 10px;
+}
+
+form#stay_form{
+  float: left;
+}
+
+img.card_image{
+  margin: 0px 5px 5px 0px;
+  width: 10%;
+  height: 10%;
+  /*border-color: #000000;*/
+  border: 3px solid;
+  border-radius: 5px;
+}
+
+div.game_table{
+  background-color: #009900;
+}
